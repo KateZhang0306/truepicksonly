@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TruePicksOnly – Honest Beauty Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #FAF7F2;
+      color: #3A2E28;
+    }
+
+    nav {
+      background: #FDF9F4;
+      border-bottom: 1px solid #E8DDD0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #6B5744;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      text-decoration: none;
+      color: #7A6A60;
+      font-size: 0.9rem;
+    }
+    .nav-links a:hover { color: #6B5744; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 100px 40px 60px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #2C1810;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #7A6A60;
+      margin-bottom: 40px;
+    }
+    .btn {
+      background: #6B5744;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .btn:hover { background: #2C1810; }
+
+    /* 文章卡片区 */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #2C1810;
+      margin-bottom: 8px;
+    }
+    .section-sub {
+      color: #7A6A60;
+      font-size: 0.9rem;
+      margin-bottom: 36px;
+    }
+
+    /* 主推文章（大卡片） */
+    .featured-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #FDF9F4;
+      border: 1px solid #E8DDD0;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 24px;
+      transition: box-shadow 0.2s;
+    }
+    .featured-card:hover { box-shadow: 0 8px 24px rgba(107,87,68,0.1); }
+    .featured-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .featured-body {
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .featured-body .card-tag {
+      margin-bottom: 16px;
+    }
+    .featured-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #2C1810;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .featured-body p {
+      font-size: 0.9rem;
+      color: #7A6A60;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    /* 小卡片网格 */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .card {
+      background: #FDF9F4;
+      border: 1px solid #E8DDD0;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 8px 24px rgba(107,87,68,0.1); }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-body { padding: 20px; }
+    .card-tag {
+      display: inline-block;
+      background: #F0E0D0;
+      color: #C4926A;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: #2C1810;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .card p {
+      font-size: 0.85rem;
+      color: #7A6A60;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .card-meta {
+      font-size: 0.78rem;
+      color: #B8A898;
+      margin-bottom: 12px;
+    }
+    .card-link {
+      color: #6B5744;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .card-link:hover { text-decoration: underline; }
+
+    footer {
+      background: #2C1810;
+      color: #B8A898;
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.85rem;
+      margin-top: 60px;
+    }
+    footer a { color: #B8A898; text-decoration: none; margin: 0 12px; }
+    footer a:hover { color: white; }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      color: #FAF7F2;
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">TruePicksOnly</div>
+    <ul class="nav-links">
+      <li><a href="#">Skincare</a></li>
+      <li><a href="#">Makeup</a></li>
+      <li><a href="#">Fragrance</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Honest Beauty Reviews</h1>
+    <p>Real picks, no fluff. Skincare and beauty products worth your money.</p>
+    <a href="#" class="btn">Browse All Articles</a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Featured</div>
+    <div class="section-sub">Our most popular guides this month.</div>
+
+    <!-- 主推大卡片 -->
+    <div class="featured-card">
+      <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800" alt="Best Moisturizers for Students">
+      <div class="featured-body">
+        <span class="card-tag">Skincare</span>
+        <h2>Best Moisturizers for Students Under $30 (That Actually Work)</h2>
+        <p>We tested 12 drugstore moisturizers so you don't have to. Here are the 5 that genuinely deliver — without breaking your budget.</p>
+        <a href="article.html" class="btn">Read Article →</a>
+      </div>
+    </div>
+
+    <!-- 小卡片 -->
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400" alt="Sunscreens">
+        <div class="card-body">
+          <span class="card-tag">Skincare</span>
+          <div class="card-meta">May 2025 · 6 min read</div>
+          <h3>5 Best Sunscreens That Don't Leave a White Cast</h3>
+          <p>Perfect for all skin tones — no chalky residue, no greasy finish.</p>
+          <a href="#" class="card-link">Read Article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1583241475880-083f84372725?w=400" alt="Perfumes Under $50">
+        <div class="card-body">
+          <span class="card-tag">Fragrance</span>
+          <div class="card-meta">May 2025 · 5 min read</div>
+          <h3>7 Best Perfumes Under $50 That Smell Expensive</h3>
+          <p>You don't need to spend $200 to smell like you did.</p>
+          <a href="#" class="card-link">Read Article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="Foundations">
+        <div class="card-body">
+          <span class="card-tag">Makeup</span>
+          <div class="card-meta">April 2025 · 7 min read</div>
+          <h3>Best Drugstore Foundations for Every Skin Type</h3>
+          <p>From oily to dry, these foundations actually stay put all day.</p>
+          <a href="#" class="card-link">Read Article →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">TruePicksOnly</div>
+    <div style="margin-bottom:16px;">
+      <a href="#">Skincare</a>
+      <a href="#">Makeup</a>
+      <a href="#">Fragrance</a>
+      <a href="#">About</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>© 2025 TruePicksOnly. This site contains affiliate links.</p>
+  </footer>
+
+</body>
+</html>
