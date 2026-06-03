@@ -1,6 +1,6 @@
 
 raw
-Article · HTML
+Article moisturizer · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,14 +37,9 @@ Article · HTML
       text-decoration: none;
     }
     .nav-links { display: flex; gap: 28px; list-style: none; }
-    .nav-links a {
-      text-decoration: none;
-      color: #7A6A60;
-      font-size: 0.9rem;
-    }
+    .nav-links a { text-decoration: none; color: #7A6A60; font-size: 0.9rem; }
     .nav-links a:hover { color: #6B5744; }
  
-    /* Article header */
     .article-header {
       max-width: 780px;
       margin: 0 auto;
@@ -68,24 +63,9 @@ Article · HTML
       line-height: 1.3;
       margin-bottom: 16px;
     }
-    .article-meta {
-      color: #7A6A60;
-      font-size: 0.85rem;
-      margin-bottom: 24px;
-    }
+    .article-meta { color: #7A6A60; font-size: 0.85rem; margin-bottom: 24px; }
     .article-meta span { margin-right: 16px; }
  
-    .disclaimer {
-      background: #F0E0D0;
-      border-left: 3px solid #C4926A;
-      padding: 14px 18px;
-      border-radius: 0 8px 8px 0;
-      font-size: 0.82rem;
-      color: #7A6A60;
-      margin-bottom: 32px;
-    }
- 
-    /* Hero image */
     .hero-image {
       width: 100%;
       height: 400px;
@@ -94,18 +74,12 @@ Article · HTML
       margin-bottom: 40px;
     }
  
-    /* Article body */
     .article-body {
       max-width: 780px;
       margin: 0 auto;
       padding: 0 24px 80px;
     }
- 
-    .article-body p {
-      margin-bottom: 20px;
-      font-size: 1rem;
-      color: #3A2E28;
-    }
+    .article-body p { margin-bottom: 20px; font-size: 1rem; color: #3A2E28; }
  
     h2 {
       font-family: 'Playfair Display', serif;
@@ -116,14 +90,7 @@ Article · HTML
       border-bottom: 1px solid #E8DDD0;
     }
  
-    h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem;
-      color: #6B5744;
-      margin: 24px 0 10px;
-    }
- 
-    /* Quick picks box */
+    /* Quick picks */
     .quick-picks {
       background: #2C1810;
       color: #FAF7F2;
@@ -155,18 +122,17 @@ Article · HTML
       border-radius: 4px;
       white-space: nowrap;
       margin-top: 3px;
-      letter-spacing: 0.05em;
     }
     .pick-name { font-size: 0.9rem; font-weight: 500; }
     .pick-price { font-size: 0.8rem; color: rgba(250,247,242,0.6); margin-top: 2px; }
  
-    /* Product card */
+    /* Product card — new layout */
     .product-card {
       background: #FDF9F4;
       border: 1px solid #E8DDD0;
       border-radius: 16px;
       padding: 32px;
-      margin: 32px 0;
+      margin: 40px 0;
       position: relative;
     }
     .product-rank {
@@ -178,64 +144,40 @@ Article · HTML
       font-size: 0.75rem;
       padding: 4px 14px;
       border-radius: 20px;
-      letter-spacing: 0.05em;
     }
-    .product-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 16px;
+ 
+    /* Left image, right info */
+    .product-header {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 24px;
     }
-    .product-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      color: #2C1810;
-      margin-bottom: 4px;
+    .product-img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      background: #f5f5f5;
+      border-radius: 12px;
     }
-    .product-brand {
-      font-size: 0.8rem;
-      color: #7A6A60;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
+    .product-info { display: flex; flex-direction: column; gap: 6px; }
+    .product-brand { font-size: 0.78rem; color: #7A6A60; text-transform: uppercase; letter-spacing: 0.08em; }
+    .product-name { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #2C1810; }
+    .stars { color: #C9A96E; font-size: 1rem; }
+    .review-count { color: #7A6A60; font-size: 0.82rem; margin-left: 6px; }
     .product-price {
+      display: inline-block;
       background: #F0E0D0;
       color: #C4926A;
       font-weight: 500;
       padding: 6px 14px;
       border-radius: 8px;
-      font-size: 0.95rem;
-      white-space: nowrap;
+      font-size: 1rem;
+      width: fit-content;
     }
-    .stars { color: #C9A96E; font-size: 1rem; margin-bottom: 12px; }
-    .review-count { color: #7A6A60; font-size: 0.82rem; margin-left: 6px; }
  
-    .pros-cons {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin: 20px 0;
-    }
-    .pros, .cons {
-      padding: 14px 18px;
-      border-radius: 10px;
-    }
-    .pros { background: #F0F7F0; }
-    .cons { background: #FBF3F0; }
-    .pros h4 { color: #4A7C59; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
-    .cons h4 { color: #A05040; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
-    .pros ul, .cons ul { list-style: none; }
-    .pros li, .cons li { font-size: 0.85rem; padding: 3px 0; }
-    .pros li::before { content: '✓ '; color: #4A7C59; font-weight: 600; }
-    .cons li::before { content: '✗ '; color: #A05040; font-weight: 600; }
- 
-    .key-ingredients {
-      margin: 16px 0;
-      font-size: 0.88rem;
-      color: #7A6A60;
-    }
+    .key-ingredients { margin: 16px 0; font-size: 0.88rem; color: #7A6A60; }
     .ingredient-tag {
       display: inline-block;
       background: #E8DDD0;
@@ -246,6 +188,31 @@ Article · HTML
       margin: 3px;
     }
  
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .pros, .cons { padding: 14px 18px; border-radius: 10px; }
+    .pros { background: #F0F7F0; }
+    .cons { background: #FBF3F0; }
+    .pros h4 { color: #4A7C59; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+    .cons h4 { color: #A05040; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+    .pros ul, .cons ul { list-style: none; }
+    .pros li, .cons li { font-size: 0.85rem; padding: 3px 0; }
+    .pros li::before { content: '✓ '; color: #4A7C59; font-weight: 600; }
+    .cons li::before { content: '✗ '; color: #A05040; font-weight: 600; }
+ 
+    .bottom-line {
+      background: #F0E0D0;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    .bottom-line strong { color: #6B5744; }
+ 
     .buy-btn {
       display: inline-block;
       background: #2C1810;
@@ -254,22 +221,11 @@ Article · HTML
       padding: 13px 28px;
       border-radius: 8px;
       font-size: 0.88rem;
-      margin-top: 16px;
+      margin-top: 8px;
       transition: background 0.2s;
     }
     .buy-btn:hover { background: #6B5744; }
  
-    /* Bottom line box */
-    .bottom-line {
-      background: #F0E0D0;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin: 20px 0;
-      font-size: 0.9rem;
-    }
-    .bottom-line strong { color: #6B5744; }
- 
-    /* Final verdict */
     .verdict {
       background: linear-gradient(135deg, #F5EDE3, #EDE0D4);
       border-radius: 16px;
@@ -300,6 +256,8 @@ Article · HTML
       .pros-cons { grid-template-columns: 1fr; }
       nav { padding: 14px 20px; }
       .nav-links { display: none; }
+      .product-header { grid-template-columns: 1fr; }
+      .product-img { width: 100%; height: 200px; }
     }
   </style>
 </head>
@@ -329,7 +287,6 @@ Article · HTML
   <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=1200" alt="Best moisturizers for students" class="hero-image">
  
   <p>Finding a good moisturizer when you're on a student budget shouldn't be this hard. The skincare aisle is overwhelming, and half the products out there are either overpriced, under-tested, or both.</p>
- 
   <p>We cut through the noise and tested the top drugstore moisturizers to find the ones that genuinely deliver — all under $30. Whether you're dealing with dorm-room dry air, stress breakouts, or just want to keep your skin healthy without spending a fortune, there's something on this list for you.</p>
  
   <!-- Quick picks -->
@@ -377,14 +334,14 @@ Article · HTML
   <!-- Product 1: CeraVe -->
   <div class="product-card">
     <span class="product-rank">🥇 Best Overall</span>
-    <img src="cerave.jpg" alt="CeraVe Moisturizing Cream" style="width:100%; height:220px; object-fit:contain; background:#f9f9f9; border-radius:10px; margin-bottom:20px;">
-    <div class="product-top">
-      <div>
+    <div class="product-header">
+      <img src="cerave.jpg" alt="CeraVe Moisturizing Cream" class="product-img">
+      <div class="product-info">
         <div class="product-brand">CeraVe</div>
         <div class="product-name">Moisturizing Cream</div>
         <div class="stars">★★★★★ <span class="review-count">144,526 reviews</span></div>
+        <div class="product-price">$17.06</div>
       </div>
-      <span class="product-price">$17.06</span>
     </div>
     <p>CeraVe is the moisturizer that dermatologists actually recommend — and for good reason. With three essential ceramides and hyaluronic acid, it restores your skin barrier while delivering 24-hour hydration. The texture is rich without being greasy, and it absorbs fast enough to use before class.</p>
     <p>At $17 for 19 oz, the price-per-ounce is unbeatable. It's fragrance-free, non-comedogenic, and holds the National Eczema Association Seal of Acceptance — meaning it's safe even for the most reactive skin types.</p>
@@ -419,14 +376,14 @@ Article · HTML
   <!-- Product 2: Vanicream -->
   <div class="product-card">
     <span class="product-rank">🥈 Best Budget</span>
-    <img src="cerave.jpg" alt="CeraVe Moisturizing Cream" style="width:100%; height:220px; object-fit:contain; background:#f9f9f9; border-radius:10px; margin-bottom:20px;">
-    <div class="product-top">
-      <div>
+    <div class="product-header">
+      <img src="vanicream.jpg" alt="Vanicream Daily Facial Moisturizer" class="product-img">
+      <div class="product-info">
         <div class="product-brand">Vanicream</div>
         <div class="product-name">Daily Facial Moisturizer</div>
         <div class="stars">★★★★★ <span class="review-count">24,066 reviews</span></div>
+        <div class="product-price">$13.97</div>
       </div>
-      <span class="product-price">$13.97</span>
     </div>
     <p>Vanicream is the #1 dermatologist-recommended brand for sensitive skin, and this lightweight moisturizer earns that title. Formulated with 5 ceramides, hyaluronic acid, squalane, and glycerin — with zero dyes, fragrances, parabens, or formaldehyde releasers — it's as clean as drugstore skincare gets.</p>
     <p>At $13.97, it's the cheapest option on this list. And if you subscribe, you can save an extra 40%, bringing it down to under $9. For a student budget, this is almost unbeatable.</p>
@@ -462,14 +419,14 @@ Article · HTML
   <!-- Product 3: Neutrogena -->
   <div class="product-card">
     <span class="product-rank">🥉 Best for Oily Skin</span>
-    <img src="neutrogena.jpg" alt="Neutrogena Hydro Boost Gel Cream" style="width:100%; height:220px; object-fit:contain; background:#f9f9f9; border-radius:10px; margin-bottom:20px;">
-    <div class="product-top">
-      <div>
+    <div class="product-header">
+      <img src="neutrogena.jpg" alt="Neutrogena Hydro Boost Gel Cream" class="product-img">
+      <div class="product-info">
         <div class="product-brand">Neutrogena</div>
         <div class="product-name">Hydro Boost Gel Cream</div>
         <div class="stars">★★★★★ <span class="review-count">4,018 reviews</span></div>
+        <div class="product-price">$22.35</div>
       </div>
-      <span class="product-price">$22.35</span>
     </div>
     <p>If you have oily or combination skin and the idea of a "cream" makes you nervous, Hydro Boost is your answer. The gel formula absorbs almost instantly, leaving skin hydrated but completely matte — no shine, no residue. It provides 48-hour hydration without clogging pores.</p>
     <p>This set also includes a trial-size hydrating cleanser, making it excellent value for students who want to try a two-step routine without committing to a full-size cleanser.</p>
@@ -504,14 +461,14 @@ Article · HTML
   <!-- Product 4: La Roche-Posay -->
   <div class="product-card">
     <span class="product-rank">⭐ Most Recommended</span>
-    <img src="laroche.jpg" alt="La Roche-Posay Toleriane Double Repair" style="width:100%; height:220px; object-fit:contain; background:#f9f9f9; border-radius:10px; margin-bottom:20px;">
-    <div class="product-top">
-      <div>
+    <div class="product-header">
+      <img src="laroche.jpg" alt="La Roche-Posay Toleriane Double Repair" class="product-img">
+      <div class="product-info">
         <div class="product-brand">La Roche-Posay</div>
         <div class="product-name">Toleriane Double Repair Moisturizer</div>
         <div class="stars">★★★★★ <span class="review-count">49,435 reviews</span></div>
+        <div class="product-price">$24.99</div>
       </div>
-      <span class="product-price">$24.99</span>
     </div>
     <p>La Roche-Posay's Toleriane Double Repair is Amazon's #1 bestseller in Face Moisturizers — and with nearly 50,000 reviews, the crowd has spoken. It repairs your skin barrier in just 1 hour while delivering 48-hour hydration, thanks to Ceramide-3, Niacinamide, and prebiotic action that balances your skin microbiome.</p>
     <p>Niacinamide is a standout ingredient here — it visibly fades discolorations over time, making this a great pick if you're dealing with post-acne marks or uneven skin tone.</p>
@@ -547,14 +504,14 @@ Article · HTML
   <!-- Product 5: Vichy -->
   <div class="product-card">
     <span class="product-rank">✨ Best Splurge</span>
-    <img src="vichy.jpg" alt="Vichy Mineral 89 Cream" style="width:100%; height:220px; object-fit:contain; background:#f9f9f9; border-radius:10px; margin-bottom:20px;">
-    <div class="product-top">
-      <div>
+    <div class="product-header">
+      <img src="vichy.jpg" alt="Vichy Mineral 89 Cream" class="product-img">
+      <div class="product-info">
         <div class="product-brand">Vichy</div>
         <div class="product-name">Mineral 89 Fragrance Free Cream</div>
         <div class="stars">★★★★★ <span class="review-count">1,222 reviews</span></div>
+        <div class="product-price">$32.00</div>
       </div>
-      <span class="product-price">$32.00</span>
     </div>
     <p>Vichy is a French pharmacy brand beloved by dermatologists in Europe, and the Mineral 89 Cream is their hero product. Slightly over $30, but the 72-hour hydration claim is real — the mineral-rich formula with Hyaluronic Acid, Vitamin E, B3, and Squalane leaves skin visibly plumper and more resilient.</p>
     <p>It's silicone-free, colorant-free, paraben-free, and dermatologist tested for sensitive skin. If your budget can stretch slightly, consider this your step up from drugstore to dermo-cosmetics.</p>
