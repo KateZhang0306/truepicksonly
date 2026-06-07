@@ -113,6 +113,9 @@
       border-radius: 16px;
       overflow: hidden;
       transition: box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     .card:hover { box-shadow: 0 8px 24px rgba(107,87,68,0.1); }
     .card img { width: 100%; height: 180px; object-fit: cover; }
@@ -181,53 +184,55 @@
     <div class="section-title">Featured</div>
     <div class="section-sub">Our most popular guides this month.</div>
  
-    <!-- 主推大卡片 1：Prime Day（最新，放最前） -->
+    <!-- 最新：Cologne 大卡片（最前） -->
+    <a href="cologne-fathers/article-cologne-fathers.html" style="text-decoration:none; color:inherit; display:block;">
+    <div class="featured-card">
+      <img src="cologne-fathers/cover.png" alt="Best Colognes for Men">
+      <div class="featured-body">
+        <span class="card-tag" style="background:#E8F0F8;color:#4A6FA5;">Fragrance</span>
+        <h2>Best Colognes for Men — Perfect for Father's Day, Office & Date Night</h2>
+        <p>From budget picks to luxury splurges — YSL, Azzaro, Tommy Hilfiger and more. The best men's colognes for every occasion.</p>
+        <a href="cologne-fathers/article-cologne-fathers.html" class="btn">Read Article →</a>
+      </div>
+    </div>
+    </a>
+ 
+    <!-- 第二：Prime Day 大卡片 -->
     <a href="prime-day-philosophy/article-prime-day-philosophy.html" style="text-decoration:none; color:inherit; display:block;">
     <div class="featured-card">
       <img src="prime-day-philosophy/cover.jpg" alt="Prime Day Beauty Deals">
       <div class="featured-body">
         <span class="card-tag" style="background:#FFE8E8;color:#E05050;">🔥 Prime Day 2026</span>
         <h2>Best Beauty Deals on Amazon Prime Day 2026 — Philosophy, L'Occitane & More</h2>
-        <p>Philosophy shower gels up to 30% off, L'Occitane 18% off — deals ending June 26. Here's everything worth adding to your cart right now.</p>
+        <p>Philosophy shower gels up to 30% off, L'Occitane 18% off — deals ending June 26.</p>
         <a href="prime-day-philosophy/article-prime-day-philosophy.html" class="btn-primeday">Shop the Deals →</a>
       </div>
     </div>
     </a>
  
-    <!-- 主推大卡片 2：Moisturizer -->
-    <a href="moisturizer/article-moisturizer.html" style="text-decoration:none; color:inherit; display:block;">
-    <div class="featured-card">
-      <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800" alt="Best Moisturizers for Students">
-      <div class="featured-body">
-        <span class="card-tag">Skincare</span>
-        <h2>Best Moisturizers for Students Under $30 (That Actually Work)</h2>
-        <p>We tested 12 drugstore moisturizers so you don't have to. Here are the 5 that genuinely deliver — without breaking your budget.</p>
-        <a href="moisturizer/article-moisturizer.html" class="btn">Read Article →</a>
-      </div>
-    </div>
-    </a>
- 
-    <!-- 小卡片 -->
+    <!-- 小卡片区 -->
     <div class="cards">
+ 
+      <!-- Moisturizer 小卡片 -->
+      <a href="moisturizer/article-moisturizer.html" class="card">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400" alt="Best Moisturizers for Students">
+        <div class="card-body">
+          <span class="card-tag">Skincare</span>
+          <div class="card-meta">June 2026 · 7 min read</div>
+          <h3>Best Moisturizers for Students Under $30 (That Actually Work)</h3>
+          <p>5 drugstore moisturizers that genuinely deliver — without breaking your budget.</p>
+          <span class="card-link">Read Article →</span>
+        </div>
+      </a>
+ 
       <div class="card">
         <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400" alt="Sunscreens">
         <div class="card-body">
           <span class="card-tag">Skincare</span>
-          <div class="card-meta">May 2025 · 6 min read</div>
+          <div class="card-meta">Coming soon</div>
           <h3>5 Best Sunscreens That Don't Leave a White Cast</h3>
           <p>Perfect for all skin tones — no chalky residue, no greasy finish.</p>
-          <a href="#" class="card-link">Read Article →</a>
-        </div>
-      </div>
- 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1583241475880-083f84372725?w=400" alt="Perfumes Under $50">
-        <div class="card-body">
-          <span class="card-tag">Fragrance</span>
-          <div class="card-meta">May 2025 · 5 min read</div>
-          <h3>7 Best Perfumes Under $50 That Smell Expensive</h3>
-          <p>You don't need to spend $200 to smell like you did.</p>
-          <a href="#" class="card-link">Read Article →</a>
+          <span class="card-link">Coming Soon</span>
         </div>
       </div>
  
@@ -235,12 +240,13 @@
         <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="Foundations">
         <div class="card-body">
           <span class="card-tag">Makeup</span>
-          <div class="card-meta">April 2025 · 7 min read</div>
+          <div class="card-meta">Coming soon</div>
           <h3>Best Drugstore Foundations for Every Skin Type</h3>
           <p>From oily to dry, these foundations actually stay put all day.</p>
-          <a href="#" class="card-link">Read Article →</a>
+          <span class="card-link">Coming Soon</span>
         </div>
       </div>
+ 
     </div>
   </div>
  
@@ -253,7 +259,7 @@
       <a href="#">About</a>
       <a href="#">Privacy Policy</a>
     </div>
-    <p>© 2026 TruePicksOnly. As an Amazon Associate I earn from qualifying purchases.</p>
+    <p>© 2026 TruePicksOnly. As an Amazon Associate I earn from qualifying purchases - at no extra cost to you..</p>
   </footer>
  
 </body>

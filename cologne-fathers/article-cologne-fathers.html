@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Colognes for Men — Office, Date Night & Everyday | TruePicksOnly</title>
+  <meta name="description" content="The best men's colognes for every occasion — office, date night, and everyday wear. Honest reviews from budget picks to luxury splurges.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #FAF7F2;
+      color: #3A2E28;
+      line-height: 1.8;
+    }
+ 
+    nav {
+      background: #FDF9F4;
+      border-bottom: 1px solid #E8DDD0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #6B5744; text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: #7A6A60; font-size: 0.9rem; }
+    .nav-links a:hover { color: #6B5744; }
+ 
+    .article-header {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 60px 24px 40px;
+    }
+    .article-tag {
+      display: inline-block;
+      background: #E8F0F8;
+      color: #4A6FA5;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .article-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      color: #2C1810;
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    .article-meta { color: #7A6A60; font-size: 0.85rem; margin-bottom: 24px; }
+    .article-meta span { margin-right: 16px; }
+ 
+    .hero-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 40px;
+    }
+ 
+    .article-body {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .article-body p { margin-bottom: 20px; font-size: 1rem; color: #3A2E28; }
+ 
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #2C1810;
+      margin: 48px 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #E8DDD0;
+    }
+ 
+    .quick-picks {
+      background: #1C2333;
+      color: #FAF7F2;
+      border-radius: 16px;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    .quick-picks h3 {
+      color: #A0B4D0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .pick-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .pick-item:last-child { border-bottom: none; }
+    .pick-badge {
+      background: #4A6FA5;
+      color: white;
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+      margin-top: 3px;
+      font-weight: 600;
+    }
+    .pick-name { font-size: 0.9rem; font-weight: 500; }
+    .pick-price { font-size: 0.8rem; color: rgba(250,247,242,0.6); margin-top: 2px; }
+ 
+    .product-card {
+      background: #FDF9F4;
+      border: 1px solid #E8DDD0;
+      border-radius: 16px;
+      padding: 32px;
+      margin: 40px 0;
+      position: relative;
+    }
+    .product-rank {
+      position: absolute;
+      top: -14px;
+      left: 32px;
+      background: #4A6FA5;
+      color: white;
+      font-size: 0.75rem;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    .product-header {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .product-img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      background: #f5f5f5;
+      border-radius: 12px;
+    }
+    .product-info { display: flex; flex-direction: column; gap: 6px; }
+    .product-brand { font-size: 0.78rem; color: #7A6A60; text-transform: uppercase; letter-spacing: 0.08em; }
+    .product-name { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #2C1810; line-height: 1.3; }
+    .stars { color: #C9A96E; font-size: 1rem; }
+    .review-count { color: #7A6A60; font-size: 0.82rem; margin-left: 6px; }
+    .product-price {
+      display: inline-block;
+      background: #E8F0F8;
+      color: #4A6FA5;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: fit-content;
+    }
+ 
+    .scent-tags { margin: 16px 0; font-size: 0.88rem; color: #7A6A60; }
+    .scent-tag {
+      display: inline-block;
+      background: #E8DDD0;
+      color: #6B5744;
+      font-size: 0.78rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin: 3px;
+    }
+    .occasion-tag {
+      display: inline-block;
+      background: #E8F0F8;
+      color: #4A6FA5;
+      font-size: 0.78rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin: 3px;
+    }
+ 
+    .pros {
+      background: #F0F7F0;
+      padding: 14px 18px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .pros h4 { color: #4A7C59; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+    .pros ul { list-style: none; }
+    .pros li { font-size: 0.85rem; padding: 3px 0; }
+    .pros li::before { content: '✓ '; color: #4A7C59; font-weight: 600; }
+ 
+    .bottom-line {
+      background: #E8F0F8;
+      border-left: 3px solid #4A6FA5;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    .bottom-line strong { color: #4A6FA5; }
+ 
+    .buy-btn {
+      display: inline-block;
+      background: #1C2333;
+      color: #FAF7F2;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .buy-btn:hover { background: #4A6FA5; }
+ 
+    .verdict {
+      background: linear-gradient(135deg, #1C2333, #2A3550);
+      color: white;
+      border-radius: 16px;
+      padding: 36px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    .verdict h2 { border: none; margin-top: 0; color: white; }
+    .verdict p { color: rgba(255,255,255,0.8); }
+ 
+    footer {
+      background: #2C1810;
+      color: #B8A898;
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.85rem;
+    }
+    footer a { color: #B8A898; text-decoration: none; margin: 0 12px; }
+    footer a:hover { color: white; }
+    .footer-logo { font-family: 'Playfair Display', serif; color: #FAF7F2; font-size: 1.2rem; margin-bottom: 16px; }
+ 
+    @media (max-width: 600px) {
+      .article-header h1 { font-size: 1.8rem; }
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .product-header { grid-template-columns: 1fr; }
+      .product-img { width: 100%; height: 200px; }
+    }
+  </style>
+</head>
+<body>
+ 
+<nav>
+  <a href="../index.html" class="logo">TruePicksOnly</a>
+  <ul class="nav-links">
+    <li><a href="#">Skincare</a></li>
+    <li><a href="#">Makeup</a></li>
+    <li><a href="#">Fragrance</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+ 
+<div class="article-header">
+  <span class="article-tag">Fragrance</span>
+  <h1>Best Colognes for Men — Perfect for Father's Day, Office & Date Night</h1>
+  <div class="article-meta">
+    <span>By TruePicksOnly</span>
+    <span>· June 2026</span>
+    <span>· 6 min read</span>
+  </div>
+</div>
+ 
+<div class="article-body">
+  <img src="cover.png" alt="Best colognes for men" class="hero-image">
+ 
+  <p>The right cologne does more than smell good — it becomes part of how people remember you. Whether you need something polished for the office, seductive for a night out, or effortlessly wearable for everyday life, the right fragrance makes all the difference.</p>
+  <p>We've rounded up the best men's colognes across every occasion and budget — from a $27 gift set that punches above its price to a $115 luxury scent that turns heads. Here's everything you need to know before you buy.</p>
+ 
+  <div class="quick-picks">
+    <h3>🎯 Quick Picks by Occasion</h3>
+    <div class="pick-item">
+      <span class="pick-badge">Best Budget</span>
+      <div>
+        <div class="pick-name"><a href="https://amzn.to/4uXeovj" target="_blank" rel="nofollow" style="color:white;">Bellavita Luxury Men's Perfume Gift Set</a></div>
+        <div class="pick-price">$26.99 · 4 fragrances in one set</div>
+      </div>
+    </div>
+    <div class="pick-item">
+      <span class="pick-badge">Best Everyday</span>
+      <div>
+        <div class="pick-name"><a href="https://amzn.to/4xiyLoo" target="_blank" rel="nofollow" style="color:white;">Tommy Hilfiger Tommy EDT</a></div>
+        <div class="pick-price">$53.95 · Clean & classic</div>
+      </div>
+    </div>
+    <div class="pick-item">
+      <span class="pick-badge">Best Office</span>
+      <div>
+        <div class="pick-name"><a href="https://amzn.to/4vwF2ej" target="_blank" rel="nofollow" style="color:white;">Guy Laroche Drakkar Bleu EDP</a></div>
+        <div class="pick-price">$56.11 · Aquatic & fresh</div>
+      </div>
+    </div>
+    <div class="pick-item">
+      <span class="pick-badge">Best Date Night</span>
+      <div>
+        <div class="pick-name"><a href="https://amzn.to/4fvAiB0" target="_blank" rel="nofollow" style="color:white;">Azzaro The Most Wanted Parfum</a></div>
+        <div class="pick-price">$115.00 · Spicy & seductive</div>
+      </div>
+    </div>
+    <div class="pick-item">
+      <span class="pick-badge">Best Luxury</span>
+      <div>
+        <div class="pick-name"><a href="https://amzn.to/4e7liaa" target="_blank" rel="nofollow" style="color:white;">YSL MYSLF Eau de Parfum</a></div>
+        <div class="pick-price">$109.10 · Woody & sophisticated</div>
+      </div>
+    </div>
+  </div>
+ 
+  <h2>Our Picks, Reviewed</h2>
+ 
+  <!-- Product 1: Bellavita -->
+  <div class="product-card">
+    <span class="product-rank">💰 Best Budget Pick</span>
+    <div class="product-header">
+      <img src="bellavita.jpg" alt="Bellavita Luxury Gift Set" class="product-img">
+      <div class="product-info">
+        <div class="product-brand">Bella Vita Luxury</div>
+        <div class="product-name">Men's Perfume Gift Set (CEO, G.O.A.T., Klub, Oud)</div>
+        <div class="stars">★★★★☆ <span class="review-count">39,978 reviews</span></div>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="product-price">$26.99</div>
+          <a href="https://amzn.to/4uXeovj" target="_blank" rel="nofollow" class="buy-btn" style="margin-top:0; padding:6px 16px; font-size:0.82rem;">Buy on Amazon →</a>
+        </div>
+      </div>
+    </div>
+    <p>Four fragrances for under $27 — this is the best way to explore different scent profiles without committing to a full bottle. The set includes CEO Man (a clean, professional scent), G.O.A.T. (bold and confident), Klub (fresh and social), and Oud (rich and warm). Each is 20ml, giving you enough to wear daily for weeks.</p>
+    <p>With nearly 40,000 reviews and 9,000+ monthly buyers, this is one of the most popular men's fragrance sets on Amazon. The quality punches well above the price point.</p>
+    <div class="scent-tags">
+      <strong>Scent notes:</strong>
+      <span class="scent-tag">Lavender</span>
+      <span class="scent-tag">Patchouli</span>
+      <span class="scent-tag">Lemon</span>
+      <span class="scent-tag">Caramel</span>
+    </div>
+    <div class="scent-tags">
+      <strong>Best for:</strong>
+      <span class="occasion-tag">🎁 Gift</span>
+      <span class="occasion-tag">🧪 Trying new scents</span>
+      <span class="occasion-tag">✈️ Travel</span>
+    </div>
+    <div class="pros">
+      <h4>Why we love it</h4>
+      <ul>
+        <li>4 fragrances for under $27</li>
+        <li>Nearly 40,000 reviews</li>
+        <li>8-hour lasting power</li>
+        <li>Perfect gift set</li>
+      </ul>
+    </div>
+    <div class="bottom-line"><strong>Bottom line:</strong> The smartest way to start a fragrance collection or gift someone who's not sure what they like yet.</div>
+    <a href="https://amzn.to/4uXeovj" class="buy-btn" target="_blank" rel="nofollow">Check Price on Amazon →</a>
+  </div>
+ 
+  <!-- Product 2: Tommy Hilfiger -->
+  <div class="product-card">
+    <span class="product-rank">👔 Best Everyday Cologne</span>
+    <div class="product-header">
+      <img src="tommy.jpg" alt="Tommy Hilfiger Tommy EDT" class="product-img">
+      <div class="product-info">
+        <div class="product-brand">Tommy Hilfiger</div>
+        <div class="product-name">Tommy Eau de Toilette</div>
+        <div class="stars">★★★★☆ <span class="review-count">500 reviews</span></div>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="product-price">$53.95</div>
+          <a href="https://amzn.to/4xiyLoo" target="_blank" rel="nofollow" class="buy-btn" style="margin-top:0; padding:6px 16px; font-size:0.82rem;">Buy on Amazon →</a>
+        </div>
+      </div>
+    </div>
+    <p>Tommy by Tommy Hilfiger is a classic American fragrance that's been around since 1994 — and it's still going strong for a reason. It's clean, fresh, and utterly inoffensive in the best way: you can wear it to work, to brunch, or running errands without anyone raising an eyebrow.</p>
+    <p>The Fougère composition is approachable and versatile, making it the perfect daily driver for men who want to smell good without overthinking it. At $53.95 for 50ml, it's reasonably priced for a designer fragrance.</p>
+    <div class="scent-tags">
+      <strong>Scent notes:</strong>
+      <span class="scent-tag">Fougère</span>
+      <span class="scent-tag">Fresh</span>
+      <span class="scent-tag">Clean</span>
+    </div>
+    <div class="scent-tags">
+      <strong>Best for:</strong>
+      <span class="occasion-tag">☀️ Everyday</span>
+      <span class="occasion-tag">💼 Office</span>
+      <span class="occasion-tag">🍳 Casual</span>
+    </div>
+    <div class="pros">
+      <h4>Why we love it</h4>
+      <ul>
+        <li>Timeless, universally liked scent</li>
+        <li>Safe for any occasion</li>
+        <li>Iconic designer brand</li>
+        <li>Long lasting formula</li>
+      </ul>
+    </div>
+    <div class="bottom-line"><strong>Bottom line:</strong> The reliable everyday cologne that never lets you down. If you want one fragrance that works everywhere, this is it.</div>
+    <a href="https://amzn.to/4xiyLoo" class="buy-btn" target="_blank" rel="nofollow">Check Price on Amazon →</a>
+  </div>
+ 
+  <!-- Product 3: Drakkar Bleu -->
+  <div class="product-card">
+    <span class="product-rank">🌊 Best Office Cologne</span>
+    <div class="product-header">
+      <img src="drakkar.jpg" alt="Guy Laroche Drakkar Bleu" class="product-img">
+      <div class="product-info">
+        <div class="product-brand">Guy Laroche</div>
+        <div class="product-name">Drakkar Bleu Eau de Parfum</div>
+        <div class="stars">★★★★½ <span class="review-count">1,482 reviews</span></div>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="product-price">$56.11</div>
+          <a href="https://amzn.to/4vwF2ej" target="_blank" rel="nofollow" class="buy-btn" style="margin-top:0; padding:6px 16px; font-size:0.82rem;">Buy on Amazon →</a>
+        </div>
+      </div>
+    </div>
+    <p>Drakkar Bleu is an aquatic fougère that strikes the perfect balance between powerful and professional. The opening burst of mint and bergamot is fresh and invigorating — ideal for early mornings — while the herbaceous heart and modern wood moss base give it a confident, lasting presence that works in any office environment.</p>
+    <p>As an Eau de Parfum, it has better longevity than most office-appropriate scents. You won't need to reapply mid-day, and it won't overpower your colleagues.</p>
+    <div class="scent-tags">
+      <strong>Scent notes:</strong>
+      <span class="scent-tag">Mint</span>
+      <span class="scent-tag">Bergamot</span>
+      <span class="scent-tag">Lavender</span>
+      <span class="scent-tag">Wood Moss</span>
+    </div>
+    <div class="scent-tags">
+      <strong>Best for:</strong>
+      <span class="occasion-tag">💼 Office</span>
+      <span class="occasion-tag">🤝 Meetings</span>
+      <span class="occasion-tag">🌅 Daytime</span>
+    </div>
+    <div class="pros">
+      <h4>Why we love it</h4>
+      <ul>
+        <li>Powerful yet office-appropriate</li>
+        <li>EDP concentration lasts all day</li>
+        <li>Aquatic freshness — never stuffy</li>
+        <li>Iconic bottle design</li>
+      </ul>
+    </div>
+    <div class="bottom-line"><strong>Bottom line:</strong> The cologne that makes you smell like you have your life together. Perfect for interviews, meetings, or any day you need to make an impression.</div>
+    <a href="https://amzn.to/4vwF2ej" class="buy-btn" target="_blank" rel="nofollow">Check Price on Amazon →</a>
+  </div>
+ 
+  <!-- Product 4: Azzaro -->
+  <div class="product-card">
+    <span class="product-rank">🔥 Best Date Night Cologne</span>
+    <div class="product-header">
+      <img src="azzaro.jpg" alt="Azzaro The Most Wanted" class="product-img">
+      <div class="product-info">
+        <div class="product-brand">Azzaro</div>
+        <div class="product-name">The Most Wanted Parfum</div>
+        <div class="stars">★★★★★ <span class="review-count">10,160 reviews</span></div>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="product-price">$115.00</div>
+          <a href="https://amzn.to/4fvAiB0" target="_blank" rel="nofollow" class="buy-btn" style="margin-top:0; padding:6px 16px; font-size:0.82rem;">Buy on Amazon →</a>
+        </div>
+      </div>
+    </div>
+    <p>The name says it all. Azzaro's The Most Wanted Parfum is one of the most complimented men's fragrances on the market — 10,000+ reviews don't lie. The toffee accord and Bourbon Vanilla create an irresistibly warm, addictive signature that draws people in, while the red ginger and spicy fougère keep it from going too sweet.</p>
+    <p>This is a fragrance for evenings, special occasions, and anywhere you want to leave a lasting impression. The longevity is exceptional — spray it once and it'll carry you through the entire night.</p>
+    <div class="scent-tags">
+      <strong>Scent notes:</strong>
+      <span class="scent-tag">Bourbon Vanilla</span>
+      <span class="scent-tag">Red Ginger</span>
+      <span class="scent-tag">Toffee</span>
+      <span class="scent-tag">Incandescent Woods</span>
+    </div>
+    <div class="scent-tags">
+      <strong>Best for:</strong>
+      <span class="occasion-tag">🌙 Date Night</span>
+      <span class="occasion-tag">🎉 Evening Out</span>
+      <span class="occasion-tag">❄️ Fall/Winter</span>
+    </div>
+    <div class="pros">
+      <h4>Why we love it</h4>
+      <ul>
+        <li>10,000+ reviews, consistently loved</li>
+        <li>Exceptional longevity</li>
+        <li>Magnetic, seductive scent</li>
+        <li>Sustainably sourced vanilla</li>
+      </ul>
+    </div>
+    <div class="bottom-line"><strong>Bottom line:</strong> If you're going on a date or want to smell unforgettable, this is the one. Worth every penny.</div>
+    <a href="https://amzn.to/4fvAiB0" class="buy-btn" target="_blank" rel="nofollow">Check Price on Amazon →</a>
+  </div>
+ 
+  <!-- Product 5: YSL -->
+  <div class="product-card">
+    <span class="product-rank">👑 Best Luxury Cologne</span>
+    <div class="product-header">
+      <img src="ysl.jpg" alt="YSL MYSLF EDP" class="product-img">
+      <div class="product-info">
+        <div class="product-brand">Yves Saint Laurent</div>
+        <div class="product-name">MYSLF Eau de Parfum</div>
+        <div class="stars">★★★★★ <span class="review-count">1,489 reviews</span></div>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+          <div class="product-price">$109.10</div>
+          <a href="https://amzn.to/4e7liaa" target="_blank" rel="nofollow" class="buy-btn" style="margin-top:0; padding:6px 16px; font-size:0.82rem;">Buy on Amazon →</a>
+        </div>
+          <a href="https://amzn.to/4e7liaa" target="_blank" rel="nofollow" class="buy-btn" style="margin-top:0; padding:6px 16px; font-size:0.82rem;">Buy on Amazon →</a>
+        </div>
+      </div>
+    </div>
+    <p>MYSLF is YSL's modern masculine fragrance — a fresh, woody scent built around orange blossom absolute and a warm woods heart. It's sophisticated without being stuffy, modern without being generic. The kind of cologne that makes people ask "what are you wearing?" in the best possible way.</p>
+    <p>With 3,000+ monthly buyers and a 4.7-star rating, it's quickly become one of the most beloved men's fragrances in the designer category. If you want to wear a true luxury fragrance that feels current and personal, MYSLF delivers.</p>
+    <div class="scent-tags">
+      <strong>Scent notes:</strong>
+      <span class="scent-tag">Fresh Accord</span>
+      <span class="scent-tag">Orange Blossom</span>
+      <span class="scent-tag">Woods</span>
+    </div>
+    <div class="scent-tags">
+      <strong>Best for:</strong>
+      <span class="occasion-tag">💼 Office</span>
+      <span class="occasion-tag">🌙 Date Night</span>
+      <span class="occasion-tag">🎁 Special Gift</span>
+    </div>
+    <div class="pros">
+      <h4>Why we love it</h4>
+      <ul>
+        <li>4.7 stars, 3,000+ monthly buyers</li>
+        <li>Modern & sophisticated</li>
+        <li>Versatile — day and night</li>
+        <li>True luxury YSL quality</li>
+      </ul>
+    </div>
+    <div class="bottom-line"><strong>Bottom line:</strong> The best luxury cologne on this list. If you're treating yourself or gifting someone special, MYSLF is worth every dollar.</div>
+    <a href="https://amzn.to/4e7liaa" class="buy-btn" target="_blank" rel="nofollow">Check Price on Amazon →</a>
+  </div>
+ 
+  <div class="verdict">
+    <h2>Which Should You Choose?</h2>
+    <p>Just starting out? The <strong><a href="https://amzn.to/4uXeovj" target="_blank" rel="nofollow" style="color:white;">Bellavita Gift Set</a></strong> lets you try four different scents for under $27 — perfect for finding your signature. For everyday wear, <strong><a href="https://amzn.to/4xiyLoo" target="_blank" rel="nofollow" style="color:white;">Tommy Hilfiger Tommy</a></strong> is timeless and foolproof. Heading to the office? <strong><a href="https://amzn.to/4vwF2ej" target="_blank" rel="nofollow" style="color:white;">Drakkar Bleu</a></strong> is powerful yet professional. For date night, nothing beats <strong><a href="https://amzn.to/4fvAiB0" target="_blank" rel="nofollow" style="color:white;">Azzaro The Most Wanted</a></strong>. And if you want true luxury, <strong><a href="https://amzn.to/4e7liaa" target="_blank" rel="nofollow" style="color:white;">YSL MYSLF</a></strong> is the one.</p>
+    <p style="margin-top:16px; font-size:0.85rem; color:rgba(255,255,255,0.6);">The right cologne is the one you reach for every morning without thinking about it.</p>
+  </div>
+ 
+  <p style="font-size:0.8rem; color:#B8A898; padding-top:20px; border-top:1px solid #E8DDD0;">
+    Prices may vary. Last updated June 2026. 
+  </p>
+ 
+</div>
+ 
+<footer>
+  <div class="footer-logo">TruePicksOnly</div>
+  <div style="margin-bottom:16px;">
+    <a href="../index.html">Home</a>
+    <a href="#">Skincare</a>
+    <a href="#">Makeup</a>
+    <a href="#">Fragrance</a>
+    <a href="#">Privacy Policy</a>
+  </div>
+  <p>© 2026 TruePicksOnly. As an Amazon Associate I earn from qualifying purchases — at no extra cost to you.</p>
+</footer>
+ 
+</body>
+</html>
